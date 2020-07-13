@@ -13,13 +13,14 @@ public class Blast {
 	}
 
 	public static void queryFile(String queryPath, String blastType, String dbPath, char dbType, String resultPath,
-			String resultFile) throws IOException  {
+			String resultFile) throws IOException {
 		Runtime runQuery = Runtime.getRuntime();
 		String queryCommand = "blastall " + "-p " + blastType + " -i " + queryPath + " -d " + dbPath + " -F " + dbType
 				+ " -o " + resultPath + resultFile + " -e " + "1e-05 " + "-m09";
 		runQuery.exec(queryCommand);
 		System.out.println();
 		System.out.println("DONE.");
+		System.out.println();
 
 	}
 
