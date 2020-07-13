@@ -10,6 +10,8 @@ public class Blast {
 		runReference.exec(referenceCommand);
 		System.out.println();
 		System.out.println("DONE.");
+		System.out.println();
+
 	}
 
 	public static void queryFile(String queryPath, String blastType, String dbPath, char dbType, String resultPath,
